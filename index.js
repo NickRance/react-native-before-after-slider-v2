@@ -54,21 +54,23 @@ const DefaultDragger = (props) => (
       left: props.state.left,
     }}
   >
-    <View
-      style={{
-        opacity: 0.6,
-        width: 50,
-        height: 50,
-        overflow: "hidden",
-        backgroundColor: "#FFF",
-        borderRadius: 25,
-        marginTop: props.state.height / 2 - 25,
-      }}
-    >
-      <TouchableWithoutFeedback>
-        <Image source={require("./arrows.png")} style={{ width: 40, height: 40, margin: 5 }} />
-      </TouchableWithoutFeedback>
-    </View>
+    <TouchableWithoutFeedback>
+      <View style={{ width: 75, height: "100%" }}>
+        <View
+          style={{
+            opacity: 0.6,
+            width: 50,
+            height: 50,
+            overflow: "hidden",
+            backgroundColor: "#FFF",
+            borderRadius: 25,
+            marginTop: props.state.height / 2 - 25,
+          }}
+        >
+          <Image source={require("./arrows.png")} style={{ width: 40, height: 40, margin: 5 }} />
+        </View>
+      </View>
+    </TouchableWithoutFeedback>
   </View>
 );
 
