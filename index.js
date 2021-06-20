@@ -160,9 +160,9 @@ export default function Compare(props) {
     });
   };
 
-  const { children } = props;
+  const { children, style } = props;
 
-  return <View style={{ width, height, backgroundColor: "#f2f2f2" }}>{renderChildren(props, state)}</View>;
+  return <View style={[{ width, height, backgroundColor: "#f2f2f2" }, style]}>{renderChildren(props, state)}</View>;
 }
 
 export { Before, After, DefaultDragger, Dragger };
